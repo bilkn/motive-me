@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotiveMe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89f8145b7d.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
 </head>
 
 <body>
 
     <header class="site-header">
-        <div class="site-header_container">
-            <div class="site-header_nav-container">
+        <div class="site-header-container">
+            <div class="site-header-nav-container">
 
-                <h1 class="site-header__logo">
-                    <a href="index.html" class="site-header__logo-link">MotivMe</a>
+                
+                
+                <h1 class="site-header-nav-container__logo header-item">
+                    <a href="index.html" class="site-header-nav-container__link">MotivMe</a>
                 </h1>
 
                 <nav class="site-header-nav">
                     <ul class="site-header-nav__list">
-                        <li class="site-header-nav__item"><a href="#" class="site-header-nav__link">Home</a></li>
-                        <li class="site-header-nav__item"><a href="#" class="site-header-nav__link">Stories</a></li>
-                        <li class="site-header-nav__item"><a href="#" class="site-header-nav__link">About</a></li>
+                        <li class="site-header-nav-item"><a href="#" class="site-header-nav-item__link">Home</a></li>
+                        <li class="site-header-nav-item"><a href="#" class="site-header-nav-item__link">Stories</a></li>
+                        <li class="site-header-nav-item"><a href="#" class="site-header-nav-item__link">About</a></li>
                     </ul>
                 </nav>
 
                 <nav class="site-header-menu-nav">
                     <ul class="site-header-menu-nav__list">
-                        <li class="site-header-menu-nav__item"><a href="#" class="site-header-menu-nav__link"></a></li>
-                        <li class="site-header-menu-nav__item"><a href="#" class="site-header-menu-nav__link"></a></li>
+                        <li class="site-header-menu-nav-item"><a href="#" class="site-header-menu-nav-item__link header-item"><i class="fab fa-github site-header-menu-nav-item__icon"></i></a></li>
+                        <li class="site-header-menu-nav-item header-item"><a href="#" class="site-header-menu-nav-item__link"><i class="fab fa-linkedin site-header-menu-nav-item__icon"></i></a></li>
                     </ul>
                 </nav>
+
+                <div class="hamburger-container header-item">
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                </div>
 
             </div>
         </div>

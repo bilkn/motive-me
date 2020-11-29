@@ -1,125 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MotiveMe</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
-    <link href="dist/hamburgers.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/89f8145b7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/89f8145b7d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="site-head">
+      <div class="site-head-container">
+        <div class="site-head-nav-container">
+          <!-- Mobile menu start -->
+          <nav class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-item__link">Home</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-item__link">About</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-item__link">Stories</a>
+              </li>
+            </ul>
+          </nav>
+           <!-- Mobile menu end -->
+          <h1 class="site-head-nav-container__logo header-item">
+            <a href="index.html" class="site-head-nav-container__link"
+              >Motiv<span class="logo-half">Me</span></a
+            >
+          </h1>
 
-    <header class="site-header">
-        <div class="site-header-container">
-            <div class="site-header-nav-container">
+          <nav class="site-head-nav">
+            <ul class="site-head-nav__list">
+              <li class="site-head-nav-item">
+                <a href="#" class="site-head-nav-item__link">Home</a>
+              </li>
+              <li class="site-head-nav-item">
+                <a href="#" class="site-head-nav-item__link">Stories</a>
+              </li>
+              <li class="site-head-nav-item">
+                <a href="#" class="site-head-nav-item__link">About</a>
+              </li>
+            </ul>
+          </nav>
 
-                
-                
-                <h1 class="site-header-nav-container__logo header-item">
-                    <a href="index.html" class="site-header-nav-container__link">MotivMe</a>
-                </h1>
+          <nav class="site-head-menu-nav">
+            <ul class="site-head-menu-nav__list">
+              <li class="site-head-menu-nav-item">
+                <a href="#" class="site-head-menu-nav-item__link header-item"
+                  ><i class="fab fa-github site-head-menu-nav-item__icon"></i
+                ></a>
+              </li>
+              <li class="site-head-menu-nav-item header-item">
+                <a href="#" class="site-head-menu-nav-item__link"
+                  ><i class="fab fa-linkedin site-head-menu-nav-item__icon"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
 
-                <nav class="site-header-nav">
-                    <ul class="site-header-nav__list">
-                        <li class="site-header-nav-item"><a href="#" class="site-header-nav-item__link">Home</a></li>
-                        <li class="site-header-nav-item"><a href="#" class="site-header-nav-item__link">Stories</a></li>
-                        <li class="site-header-nav-item"><a href="#" class="site-header-nav-item__link">About</a></li>
-                    </ul>
-                </nav>
-
-                <nav class="site-header-menu-nav">
-                    <ul class="site-header-menu-nav__list">
-                        <li class="site-header-menu-nav-item"><a href="#" class="site-header-menu-nav-item__link header-item"><i class="fab fa-github site-header-menu-nav-item__icon"></i></a></li>
-                        <li class="site-header-menu-nav-item header-item"><a href="#" class="site-header-menu-nav-item__link"><i class="fab fa-linkedin site-header-menu-nav-item__icon"></i></a></li>
-                    </ul>
-                </nav>
-
-                <div class="hamburger-container header-item">
-                    <button class="hamburger hamburger--collapse" type="button">
-                        <span class="hamburger-box">
-                          <span class="hamburger-inner"></span>
-                        </span>
-                      </button>
-                </div>
-
-            </div>
+          <div class="menu-bar">
+            <button class="menu-bar__item"></button>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="home-main">
-        <div class="home-page">
-
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h2 class="hero-content__title">Sky is the limit</h2>
-                    <p class="hero-content__text">Persistent motivation is the key of succes. Get motivated today!</p>
-                </div>
-            </div>
-
-            <div class="action-container">
-                
-                <div class="action-title-container">
-                    <h2 class="action-title-container__title">Choose Your Dream</h2>
-                    <p class="action-title-container__text">I wanna be,</p>
-                </div>
-
-                <ul class="action-container__list">
-                    <li class="action-container__item"><a href="#" class="action-container__link">
-                        <p class="action-container__text">Artist</p>
-                    </a></li>
-                    <li class="action-container__item"><a href="#" class="action-container__link">
-                        <p class="action-container__text">Entrepreneur</p>
-                    </a></li>
-                    <li class="action-container__item"><a href="#" class="action-container__link">
-                        <p class="action-container__text">Traveler</p>
-                    </a></li>
-                </ul>
-
-            </div>
-
-            <div class="quote-container">
-
-                <div class="quote-container__content">
-                    <div class="quote-container__img-container">
-                        <img src="" alt="" class="quote-container__img">
-                    </div>
-                    <div class="quote-container__text-container">
-                        <p class="quote-container__text"><q class="quote-container__quote">The greatest glory in living lies not in never falling, but in rising every time we fall.</q></p>
-                        <p class="quote-container__credit">Nelson Mandela</p>
-                    </div>
-                </div>
-                <div class="quote-container__content">
-                    <img src="" alt="" class="quote-container__img">
-                    <div class="quote-container__text-container">
-                        <p class="quote-container__text"><q class="quote-container__quote">The way to get started is to quit talking and begin doing.</q></p>
-                        <p class="quote-container__credit">Walt Disney</p>
-                    </div>
-                </div>
-                <div class="quote-container__content">
-                    <img src="" alt="" class="quote-container__img">
-                    <div class="quote-container__text-container">
-                        <p class="quote-container__text"><q class="quote-container__quote">
-                            The limits of the possible can only be defined by going beyond them into the impossible.</q></p>
-                        <p class="quote-container__credit">Arthur C. Clarke</p>
-                    </div>
-                </div>
-
-            </div>
-
-            
+      <div class="home-page">
+        <!-- Hero start -->
+        <div class="hero-container">
+          <div class="hero-content">
+            <h2 class="hero-content__title">Sky is the limit</h2>
+            <p class="hero-content__text">
+              Persistent motivation is the key of succes. Get motivated today!
+            </p>
+          </div>
         </div>
-    </main>
-    
-    <div class="footer-container">
-        <footer class="home-footer">
-            <a href='https://www.freepik.com/photos/travel'>Travel photo created by freepik - www.freepik.com</a>
-            <p class="home-footer__text">©2020 Code and Design by Bilkan Konus.</p>
-        </footer>
-    </div>
-    
+        <!-- Hero end -->
+        <!-- Action start -->
+        <div class="action-container">
+          <div class="action-title-container">
+            <h2 class="action-title-container__title">Choose Your Dream</h2>
+            <p class="action-title-container__text">I wanna be,</p>
+          </div>
 
-</body>
+          <ul class="action-container__list">
+            <li class="action-container__item">
+              <a href="#" class="action-container__link">
+                <p class="action-container__text">Artist</p>
+              </a>
+            </li>
+            <li class="action-container__item">
+              <a href="#" class="action-container__link">
+                <p class="action-container__text">Entrepreneur</p>
+              </a>
+            </li>
+            <li class="action-container__item">
+              <a href="#" class="action-container__link">
+                <p class="action-container__text">Traveler</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Action end -->
+        <!-- Quote start -->
+        <div class="quote-container">
+          <div class="quote-container__content">
+            <div class="quote-container__img-container">
+              <img src="" alt="" class="quote-container__img" />
+            </div>
+            <div class="quote-container__text-container">
+              <p class="quote-container__text">
+                <q class="quote-container__quote"
+                  >The greatest glory in living lies not in never falling, but
+                  in rising every time we fall.</q
+                >
+              </p>
+              <p class="quote-container__credit">Nelson Mandela</p>
+            </div>
+          </div>
+          <div class="quote-container__content">
+            <img src="" alt="" class="quote-container__img" />
+            <div class="quote-container__text-container">
+              <p class="quote-container__text">
+                <q class="quote-container__quote"
+                  >The way to get started is to quit talking and begin doing.</q
+                >
+              </p>
+              <p class="quote-container__credit">Walt Disney</p>
+            </div>
+          </div>
+          <div class="quote-container__content">
+            <img src="" alt="" class="quote-container__img" />
+            <div class="quote-container__text-container">
+              <p class="quote-container__text">
+                <q class="quote-container__quote">
+                  The limits of the possible can only be defined by going beyond
+                  them into the impossible.</q
+                >
+              </p>
+              <p class="quote-container__credit">Arthur C. Clarke</p>
+            </div>
+          </div>
+        </div>
+        <!-- Quote End -->
+        <!-- About start -->
+        <div class="about-container">
+          <h2 class="about-container__title">About Success</h2>
+          <section class="about-content">
+            <p class="about-content__text">
+              Success is something everyone wants, like answering yes to the
+              question of whether you would like a million dollars. However, one
+              of the things that makes success a success is that it is not
+              immediately available. The road to success is a long road, and
+              perseverance, persistence, and problem-solving skill are essential
+              to complete this long road. Many people only dream of going this
+              road, be the ones who set off, not the ones who dream.
+            </p>
+            <div class="about-content__image-container">
+              <img src="" alt="" class="about-content__image" />
+            </div>
+          </section>
+        </div>
+        <!-- About end -->
+        <!-- Stories start -->
+        <div class="stories-container">
+          <section class="story-content">
+            <h3 class="story__title">The Elephant Rope</h3>
+            <p class="story__text">
+              A gentleman was walking through an elephant camp, and he spotted
+              that the elephants weren’t being kept in cages or held by the use
+              of chains. All that was holding them back from escaping the camp,
+              was a small piece of rope tied to one of their legs. As the man
+              gazed upon the elephants, he was completely confused as to why the
+              elephants didn’t just use their strength to break the rope and
+              escape the camp. They could easily have done so, but instead, they
+              didn’t try to at all.
+              <br />
+              <br />
+              Curious and wanting to know the answer, he asked a trainer nearby
+              why the elephants were just standing there and never tried to
+              escape. The trainer replied; “when they are very young and much
+              smaller we use the same size rope to tie them and, at that age,
+              it’s enough to hold them. As they grow up, they are conditioned to
+              believe they cannot break away. They believe the rope can still
+              hold them, so they never try to break free.”
+              <br />
+              <br />
+              The only reason that the elephants weren’t breaking free and
+              escaping from the camp was that over time they adopted the belief
+              that it just wasn’t possible.
+            </p>
+          </section>
+        </div>
+        <!-- Stories end -->
+      </div>
+    </main>
+    <!-- Footer start -->
+    <div class="footer-container">
+      <footer class="home-footer">
+        <a href="https://www.freepik.com/photos/travel"
+          >Travel photo created by freepik - www.freepik.com</a
+        >
+        <p class="home-footer__text">©2020 Code and Design by Bilkan Konus.</p>
+      </footer>
+    </div>
+    <!-- Footer end -->
+  </body>
 </html>

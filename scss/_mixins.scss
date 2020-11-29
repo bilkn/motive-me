@@ -1,4 +1,23 @@
 @mixin flex {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
+
+@mixin hamburger-bar {
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  width: 25px;
+}
+
+@mixin bar-transition {
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+@mixin container-padding {
+  padding: 2rem 1rem;
+}
+

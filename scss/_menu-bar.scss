@@ -1,0 +1,44 @@
+@import './mixins';
+.menu-bar {
+  align-items: center;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+  position: relative;
+  width: 35px;
+  &__item {
+    @include hamburger-bar;
+    @include bar-transition;
+  }
+}
+
+.menu-bar::before {
+  @include hamburger-bar;
+  @include bar-transition;
+  content: '';
+  position: absolute;
+  transform: translateY(-8px);
+}
+
+.menu-bar::after {
+  @include hamburger-bar;
+  @include bar-transition;
+  content: '';
+  position: absolute;
+  transform: translateY(8px);
+}
+
+.menu-bar--open .menu-bar__item {
+  transform: translateX(40px);
+  opacity: 0;
+}
+
+.menu-bar--open.menu-bar::before {
+  transform: rotate(45deg);
+}
+
+.menu-bar--open.menu-bar::after {
+  transform: rotate(-45deg);
+}

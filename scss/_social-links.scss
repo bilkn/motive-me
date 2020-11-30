@@ -1,0 +1,11 @@
+@import 'mixins';
+
+.social-links {
+  @include flex;
+  font-size: 2.2rem;
+  justify-content: center;
+  &__link {
+    color: #dddbdb;
+    margin-right: 1.5rem;
+  }
+}

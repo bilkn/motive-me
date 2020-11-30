@@ -1,7 +1,15 @@
-@import 'config', 'menu-bar', 'mixins', 'site-head', 'mobile-menu', "hero-section", "action-section";
+@import 'config', 'menu-bar', 'mixins', 'site-head', 'mobile-menu', "hero-section", "action-section", "social-links";
 
 
 
 .home-main {
   padding: 8rem 1.5rem 0 1.5rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-margin {
+  margin: 0 !important;
 }

@@ -1,17 +1,14 @@
 @import './mixins';
 @import './variables';
 
-.site-head-menu-nav-item__link {
-  font-size: 1.8rem;
-  color: $main-color;
-}
-
 .site-head {
+  background: rgb(187, 187, 187);
   padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100vw;
 }
 
 .site-head-nav-container {
-  border: 1px solid red;
   @include flex;
 
   .site-head-nav {
@@ -24,9 +21,10 @@
   &__logo {
     @include flex;
     flex: auto;
+    font-family: $roboto;
     margin-right: 0 !important;
     .logo-half {
-      color: #ffd369 !important;
+      color: $sec-color !important;
     }
   }
 
@@ -41,4 +39,9 @@
       justify-content: space-between;
     }
   }
+}
+
+.site-head-menu-nav-item__link {
+  font-size: 1.8rem;
+  color: $main-color;
 }

@@ -13,11 +13,7 @@
 
 @mixin bar-transition {
   transition-property: transform, opacity;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-}
-
-@mixin container-padding {
-  padding: 2rem 1rem;
 }
 

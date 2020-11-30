@@ -7,6 +7,16 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #222831;
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+}
+
 li {
   list-style: none;
 }
@@ -112,7 +122,7 @@ button {
 }
 
 .site-head {
-  background: #bbbbbb;
+  background: #4b505afb;
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100vw;
@@ -140,6 +150,10 @@ button {
   display: flex;
 }
 
+.site-head-nav-container__link {
+  color: #f5f4f4 !important;
+}
+
 .site-head-nav-container__logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -150,7 +164,7 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  font-family: "Dosis", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-right: 0 !important;
 }
 
@@ -181,7 +195,7 @@ button {
 }
 
 .mobile-menu {
-  background: #747474;
+  background: #393e46;
   display: block;
   height: 101vh;
   position: fixed;
@@ -230,11 +244,98 @@ button {
           transform: translateY(0);
 }
 
-html {
-  scroll-behavior: smooth;
+.hero-container {
+  margin-bottom: 4rem;
+}
+
+.hero-container .hero-content__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.hero-container .hero-content__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.action-container .action-title-container {
+  margin-bottom: 2rem;
+}
+
+.action-container .action-title-container__title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.action-container .action-title-container__text {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.action-container__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.action-container__list .action-container-item {
+  margin-bottom: 2rem;
+  width: 70%;
+  height: 300px;
+}
+
+.action-container__list .action-container-item__link {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 10px;
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.action-container__list .action-container-item__link--bg-entrepreneur {
+  background: url("../../assets/business-man--400w.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.action-container__list .action-container-item__link--bg-traveler {
+  background: url("../../assets/traveler--400w.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.action-container__list .action-container-item__link--bg-artist {
+  background: url("../../assets/guitar-player--400w.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.action-container__list .action-container-item--margin-zero {
+  margin: 0 !important;
 }
 
 .home-main {
-  padding: 6rem 1.5rem 0 1.5rem;
+  padding: 8rem 1.5rem 0 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 @import './variables';
 
 .site-head {
-  background: rgb(187, 187, 187);
+  background: #4b505afb;
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100vw;
@@ -18,10 +18,15 @@
     }
   }
 
+  &__link {
+    color: #f5f4f4 !important;
+  }
+
   &__logo {
+    
     @include flex;
     flex: auto;
-    font-family: $roboto;
+    font-family: $mont;
     margin-right: 0 !important;
     .logo-half {
       color: $sec-color !important;

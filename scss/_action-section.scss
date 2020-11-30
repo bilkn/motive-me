@@ -1,0 +1,50 @@
+.action-container {
+  .action-title-container {
+    &__title {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    &__text {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    @include flex;
+    flex-direction: column;
+    .action-container-item {
+      margin-bottom: 2rem;
+      width: 70%;
+      height: 300px;
+      &__link {
+        align-items: flex-end;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        font-size: 1.4rem;
+        padding: 1rem;
+        height: 100%;
+        width: 100%;
+      }
+      &__link--bg-entrepreneur {
+        background: url('../../assets/business-man--400w.jpg');
+        @include background-cover;
+       
+      }
+      &__link--bg-traveler {
+        background: url('../../assets/traveler--400w.jpg');
+        @include background-cover;
+      }
+      &__link--bg-artist {
+        background: url('../../assets/guitar-player--400w.png');
+        @include background-cover;
+      }
+    }
+    .action-container-item--margin-zero {
+      margin: 0 !important;
+    }
+  }
+}

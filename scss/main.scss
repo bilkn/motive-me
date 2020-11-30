@@ -1,9 +1,7 @@
-@import './config', './menu-bar', './mixins', './site-head', './mobile-menu';
+@import 'config', 'menu-bar', 'mixins', 'site-head', 'mobile-menu', "hero-section", "action-section";
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 .home-main {
-  padding: 6rem 1.5rem 0 1.5rem;
+  padding: 8rem 1.5rem 0 1.5rem;
 }

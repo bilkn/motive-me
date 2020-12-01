@@ -1,7 +1,9 @@
 .action-container {
-  margin-bottom: 10rem;
+  padding: $section-left-right-padding;
+  margin-bottom: $section-margin-bottom;
   .action-title-container {
     &__title {
+      color: $sec-color; //can be changed
       font-size: 1.4rem;
       text-align: center;
       margin-bottom: 0.4rem;
@@ -21,6 +23,7 @@
       width: 70%;
       height: 300px;
       &__link {
+        @include background-cover;
         align-items: flex-end;
         border-radius: 10px;
         color: whitesmoke;
@@ -32,16 +35,12 @@
       }
       &__link--bg-entrepreneur {
         background: url('../../assets/business-man--400w.jpg');
-        @include background-cover;
-       
       }
       &__link--bg-traveler {
         background: url('../../assets/traveler--400w.jpg');
-        @include background-cover;
       }
       &__link--bg-artist {
         background: url('../../assets/guitar-player--400w.png');
-        @include background-cover;
       }
     }
     .action-container-item--margin-zero {

@@ -1,11 +1,14 @@
 .quote-container {
+  margin-bottom: $section-margin-bottom;
+  padding: $section-left-right-padding;
   &__title {
+    color: $sec-color;
     font-size: $h3-title-size;
     text-align: center;
     margin-bottom: $title-bottom-margin;
   }
   &__content {
-      margin-bottom: $title-bottom-margin;
+    margin-bottom: $title-bottom-margin;
   }
   &__img-container {
     border-radius: 50%;
@@ -14,19 +17,23 @@
     width: 100px;
   }
   &__img {
-      border-radius: 50%;
-      height: 100px;
-      object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
     width: 100px;
   }
+
   &__text-container {
+    font-size: 1.2rem;
     text-align: center;
   }
   &__text {
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     margin-bottom: $quote-credit-margin-bottom;
   }
   &__credit {
+    color: #a6a9ad;
+    font-size: 1.1rem;
     font-style: italic;
   }
 }

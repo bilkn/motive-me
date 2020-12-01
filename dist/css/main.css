@@ -259,10 +259,12 @@ button {
 }
 
 .hero-container {
-  margin-bottom: 4rem;
+  padding: 0 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-container .hero-content__title {
+  color: #ffd369;
   font-family: 'Roboto', sans-serif;
   font-size: 1.75rem;
   text-align: center;
@@ -276,6 +278,7 @@ button {
 }
 
 .action-container {
+  padding: 0 1.5rem 0 1.5rem;
   margin-bottom: 10rem;
 }
 
@@ -284,6 +287,7 @@ button {
 }
 
 .action-container .action-title-container__title {
+  color: #ffd369;
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 0.4rem;
@@ -314,6 +318,9 @@ button {
 }
 
 .action-container__list .action-container-item__link {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -330,23 +337,14 @@ button {
 
 .action-container__list .action-container-item__link--bg-entrepreneur {
   background: url("../../assets/business-man--400w.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .action-container__list .action-container-item__link--bg-traveler {
   background: url("../../assets/traveler--400w.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .action-container__list .action-container-item__link--bg-artist {
   background: url("../../assets/guitar-player--400w.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .action-container__list .action-container-item--margin-zero {
@@ -371,8 +369,14 @@ button {
   margin-right: 1.5rem;
 }
 
+.quote-container {
+  margin-bottom: 10rem;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
 .quote-container__title {
-  font-size: 1.3rem;
+  color: #ffd369;
+  font-size: 1.4rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -397,20 +401,41 @@ button {
 }
 
 .quote-container__text-container {
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .quote-container__text {
-  line-height: 1.5rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .quote-container__credit {
+  color: #a6a9ad;
+  font-size: 1.1rem;
   font-style: italic;
 }
 
+.about-container {
+  text-align: center;
+  padding: 0 1.5rem 0 1.5rem;
+  padding-top: 5rem;
+}
+
+.about-container__title {
+  color: #ffd369;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.about-container .about-content {
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
+
 .home-main {
-  padding: 8rem 1.5rem 0 1.5rem;
+  padding-top: 8rem;
 }
 
 .no-scroll {

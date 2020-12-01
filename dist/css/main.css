@@ -275,6 +275,10 @@ button {
   text-align: center;
 }
 
+.action-container {
+  margin-bottom: 10rem;
+}
+
 .action-container .action-title-container {
   margin-bottom: 2rem;
 }
@@ -365,6 +369,44 @@ button {
 .social-links__link {
   color: #dddbdb;
   margin-right: 1.5rem;
+}
+
+.quote-container__title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quote-container__content {
+  margin-bottom: 2rem;
+}
+
+.quote-container__img-container {
+  border-radius: 50%;
+  height: 100px;
+  margin: 0 auto 1rem auto;
+  width: 100px;
+}
+
+.quote-container__img {
+  border-radius: 50%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+}
+
+.quote-container__text-container {
+  text-align: center;
+}
+
+.quote-container__text {
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-container__credit {
+  font-style: italic;
 }
 
 .home-main {

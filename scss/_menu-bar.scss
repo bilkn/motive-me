@@ -6,7 +6,7 @@
   justify-content: center;
   height: 30px;
   position: relative;
-  width: 35px;
+  width: 25px;
   &__item {
     @include hamburger-bar;
     @include bar-transition;

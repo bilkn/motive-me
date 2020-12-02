@@ -1,0 +1,32 @@
+.site-top-btn {
+  background: #4b505ac5;
+  border: none;
+  border-radius: 50%;
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 2.2rem;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  width: 50px;
+  &__link {
+    color: #eeeeee;
+  }
+}
+
+.site-top-btn:hover {
+  background-color: #4b505ae0;
+}
+
+.site-top-btn:active {
+  background-color: #4b505a;
+}
+
+.site-top-btn {
+  transition: transform 500ms ease-in-out;
+  transform: translateY(200px);
+}
+
+.site-top-btn--active {
+  transform: translateY(0px);
+}

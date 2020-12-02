@@ -5,7 +5,7 @@
 
 @mixin hamburger-bar {
   background: black;
-  border: 1px solid black;
+  border: 1px solid $third-color;
   border-radius: 5px;
   outline: none;
   width: 25px;

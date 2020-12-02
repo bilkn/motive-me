@@ -1,15 +1,15 @@
 .about-container {
+  margin-bottom: $section-margin-bottom;
   text-align: center;
   padding: $section-left-right-padding;
   padding-top: 5rem;
   &__title {
-    color: $sec-color;
-    font-size: $h3-title-size;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+    @include title-style;
+    
   }
 
   .about-content {
+    font-size: $content-font-size;
     line-height: 1.5rem;
     letter-spacing: 2px;
   }

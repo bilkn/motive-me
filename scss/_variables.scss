@@ -1,11 +1,15 @@
 $main-color: #222831;
 $sec-color: #ffd369;
+$sec-color-light: #ffd2698f;
 $mont: 'Montserrat', sans-serif;
 $h3-title-size: 1.4rem;
+$content-font-size: 1.1rem;
 $title-bottom-margin: 2rem;
 $quote-img-margin-bottom: 1rem;
 $quote-credit-margin-bottom: 0.7rem;
-$gray-border-bottom: 1px solid #454b55;
-$site-bg-1: linear-gradient(90deg, #222831, #2d343f, #2f3541);
-$section-left-right-padding: 0 1.5rem 0 1.5rem;
 $section-margin-bottom: 10rem;
+$section-left-right-padding: 0 1.5rem 0 1.5rem;
+$gray-border-bottom: 1px solid #454b55;
+$title-border-bottom: 2px solid $sec-color-light;
+$site-bg-1: linear-gradient(90deg, #222831, #2d343f, #2f3541);
+$link-transition: color 100ms ease-in;

@@ -2,10 +2,9 @@
   margin-bottom: $section-margin-bottom;
   padding: $section-left-right-padding;
   &__title {
+    @include title-style;
     color: $sec-color;
     font-size: $h3-title-size;
-    text-align: center;
-    margin-bottom: $title-bottom-margin;
   }
   &__content {
     margin-bottom: $title-bottom-margin;

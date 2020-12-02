@@ -1,0 +1,17 @@
+.footer-container {
+  padding: $section-left-right-padding;
+  .home-footer {
+    @include flex;
+    justify-content: space-between;
+    &__freepik-link {
+      color: whitesmoke !important;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: $link-transition;
+    }
+    &__freepik-link:hover {
+      color: #afafaf !important;
+    }
+  }
+}
+

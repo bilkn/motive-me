@@ -22,3 +22,15 @@
   background-position: center !important;
   background-size: cover !important;
 }
+
+@mixin title-style {
+  border-bottom: $title-border-bottom;
+  color: $sec-color;
+  font-size: $h3-title-size;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  width: max-content;
+}

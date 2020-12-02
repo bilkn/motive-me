@@ -15,6 +15,7 @@ body {
   background: #222831;
   color: aliceblue;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 1rem;
 }
 
 li {
@@ -375,10 +376,19 @@ button {
 }
 
 .quote-container__title {
+  border-bottom: 2px solid #ffd2698f;
   color: #ffd369;
   font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #ffd369;
+  font-size: 1.4rem;
 }
 
 .quote-container__content {
@@ -417,21 +427,89 @@ button {
 }
 
 .about-container {
+  margin-bottom: 10rem;
   text-align: center;
   padding: 0 1.5rem 0 1.5rem;
   padding-top: 5rem;
 }
 
 .about-container__title {
+  border-bottom: 2px solid #ffd2698f;
   color: #ffd369;
   font-size: 1.4rem;
   letter-spacing: 2px;
-  margin-bottom: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .about-container .about-content {
+  font-size: 1.1rem;
   line-height: 1.5rem;
   letter-spacing: 2px;
+}
+
+.stories-container {
+  margin-bottom: 10rem;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.stories-container .story__title {
+  border-bottom: 2px solid #ffd2698f;
+  color: #ffd369;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.stories-container .story__name {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.stories-container .story__text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  word-spacing: 3px;
+}
+
+.footer-container {
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.footer-container .home-footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-container .home-footer__freepik-link {
+  color: whitesmoke !important;
+  font-size: 0.9rem;
+  text-align: center;
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
+}
+
+.footer-container .home-footer__freepik-link:hover {
+  color: #afafaf !important;
 }
 
 .home-main {

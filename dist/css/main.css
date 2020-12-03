@@ -32,9 +32,16 @@ button {
 }
 
 .menu-bar {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,8 +53,12 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   height: 30px;
-  position: relative;
+  position: fixed;
+  right: 1rem;
+  top: 13px;
+  outline: none;
   width: 25px;
+  z-index: 1001;
 }
 
 .menu-bar__item {
@@ -56,12 +67,12 @@ button {
   border-radius: 5px;
   outline: none;
   width: 25px;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-property: opacity, border-color, -webkit-transform;
+  transition-property: opacity, border-color, -webkit-transform;
+  transition-property: transform, opacity, border-color;
+  transition-property: transform, opacity, border-color, -webkit-transform;
+  -webkit-transition-duration: 0.5s, 0.5s, 200ms;
+          transition-duration: 0.5s, 0.5s, 200ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
@@ -72,12 +83,12 @@ button {
   border-radius: 5px;
   outline: none;
   width: 25px;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-property: opacity, border-color, -webkit-transform;
+  transition-property: opacity, border-color, -webkit-transform;
+  transition-property: transform, opacity, border-color;
+  transition-property: transform, opacity, border-color, -webkit-transform;
+  -webkit-transition-duration: 0.5s, 0.5s, 200ms;
+          transition-duration: 0.5s, 0.5s, 200ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   content: '';
@@ -92,12 +103,12 @@ button {
   border-radius: 5px;
   outline: none;
   width: 25px;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-property: opacity, border-color, -webkit-transform;
+  transition-property: opacity, border-color, -webkit-transform;
+  transition-property: transform, opacity, border-color;
+  transition-property: transform, opacity, border-color, -webkit-transform;
+  -webkit-transition-duration: 0.5s, 0.5s, 200ms;
+          transition-duration: 0.5s, 0.5s, 200ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   content: '';
@@ -107,8 +118,8 @@ button {
 }
 
 .menu-bar--open .menu-bar__item {
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
   opacity: 0;
 }
 
@@ -120,6 +131,12 @@ button {
 .menu-bar--open.menu-bar::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .menu-bar {
+    display: none;
+  }
 }
 
 .site-head {
@@ -156,6 +173,10 @@ button {
 }
 
 .site-head-nav-container__logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -195,6 +216,13 @@ button {
   color: #222831;
 }
 
+@media (min-width: 768px) {
+  .site-head-nav,
+  .site-head-menu-nav {
+    display: block !important;
+  }
+}
+
 .mobile-menu {
   background: #393e46;
   display: -webkit-box;
@@ -220,6 +248,7 @@ button {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   width: 101vw;
+  z-index: 1000;
 }
 
 .mobile-menu-nav {
@@ -253,10 +282,24 @@ button {
   font-size: 2rem;
 }
 
+.mobile-menu-nav__list .mobile-menu-nav-item__link:hover {
+  color: #ffd269bb;
+}
+
 .mobile-menu--open {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .hero-container {
@@ -524,7 +567,6 @@ button {
   border-radius: 50%;
   bottom: 10px;
   cursor: pointer;
-  display: none;
   font-size: 2.2rem;
   height: 50px;
   position: fixed;
@@ -551,7 +593,6 @@ button {
 }
 
 .site-top-btn--active {
-  display: block;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }

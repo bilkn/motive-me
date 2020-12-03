@@ -1,12 +1,21 @@
 @import './mixins';
 .menu-bar {
+  appearance: none;
   align-items: center;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 30px;
-  position: relative;
+  position: fixed;
+  right: 1rem;
+  top: 13px;
+  outline: none;
   width: 25px;
+  z-index: 1001;
   &__item {
     @include hamburger-bar;
     @include bar-transition;
@@ -30,7 +39,7 @@
 }
 
 .menu-bar--open .menu-bar__item {
-  transform: translateX(40px);
+  transform: translateX(60px);
   opacity: 0;
 }
 
@@ -40,4 +49,10 @@
 
 .menu-bar--open.menu-bar::after {
   transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .menu-bar {
+    display: none;
+  }
 }

@@ -22,12 +22,14 @@ btn.addEventListener('click', () => {
   }
 });
 
-siteTopBtn.addEventListener('click', () => {window.scroll(scrollOptions)});
+siteTopBtn.addEventListener('click', () => {
+  window.scroll(scrollOptions);
+});
 
 mobileMenu.addEventListener('click', (e) => {
   const menuItem = e.target.closest('.mobile-menu-nav-item');
   if (menuItem) {
-    closeMobileMenu();
+    mobileMenu.style.closeMobileMenu();
     removeNoScroll(document.body);
   }
 });

@@ -12,8 +12,8 @@
 }
 
 @mixin bar-transition {
-  transition-property: transform, opacity;
-  transition-duration: 0.5s;
+  transition-property: transform, opacity, border-color;
+  transition-duration: 0.5s, 0.5s, 200ms;
   transition-timing-function: ease-in-out;
 }
 

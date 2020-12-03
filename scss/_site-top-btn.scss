@@ -4,7 +4,6 @@
   border-radius: 50%;
   bottom: 10px;
   cursor: pointer;
-  display: none;
   font-size: 2.2rem;
   height: 50px;
   position: fixed;
@@ -25,6 +24,5 @@
 }
 
 .site-top-btn--active {
-  display: block;
   transform: translateY(0px);
 }

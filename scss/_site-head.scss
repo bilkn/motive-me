@@ -23,7 +23,7 @@
   }
 
   &__logo {
-    
+    user-select: none;
     @include flex;
     flex: auto;
     font-family: $mont;
@@ -49,4 +49,11 @@
 .site-head-menu-nav-item__link {
   font-size: 1.8rem;
   color: $main-color;
+}
+
+@media (min-width: 768px) {
+  .site-head-nav,
+  .site-head-menu-nav{
+    display: block !important;
+  }
 }

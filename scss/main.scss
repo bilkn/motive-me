@@ -1,6 +1,6 @@
-@import 'config', 'menu-bar', 'mixins', 'site-head', 'mobile-menu', "hero-section", "action-section", "social-links", "quote-section", "about-section", "stories-section", "footer", "site-top-btn";
-
-
+@import 'config', 'menu-bar', 'mixins', 'site-head', 'mobile-menu',
+  'hero-section', 'action-section', 'social-links', 'quote-section',
+  'about-section', 'stories-section', 'footer', 'site-top-btn';
 
 .home-main {
   padding-top: 8rem;
@@ -13,3 +13,4 @@
 .no-margin {
   margin: 0 !important;
 }
+

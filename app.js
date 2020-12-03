@@ -6,6 +6,10 @@ const intersectOptions = {
   rootMargins: '0px',
   threshold: 0,
 };
+const scrollOptions = {
+  top: 0,
+  behavior: 'smooth',
+};
 let isMenuOpen = false;
 /* Event listeners */
 btn.addEventListener('click', () => {
@@ -17,6 +21,8 @@ btn.addEventListener('click', () => {
     removeNoScroll(document.body);
   }
 });
+
+siteTopBtn.addEventListener('click', () => {window.scroll(scrollOptions)});
 
 mobileMenu.addEventListener('click', (e) => {
   const menuItem = e.target.closest('.mobile-menu-nav-item');
@@ -56,8 +62,7 @@ function removeNoScroll(selector) {
 function handleIntersect(entries) {
   if (entries[0].isIntersecting) {
     siteTopBtn.classList.add('site-top-btn--active');
-  } 
-  else {
+  } else {
     siteTopBtn.classList.remove('site-top-btn--active');
   }
 }

@@ -524,14 +524,21 @@ button {
   border-radius: 50%;
   bottom: 10px;
   cursor: pointer;
+  display: none;
   font-size: 2.2rem;
   height: 50px;
   position: fixed;
   right: 10px;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   width: 50px;
 }
 
-.site-top-btn__link {
+.site-top-btn__icon {
   color: #eeeeee;
 }
 
@@ -543,16 +550,8 @@ button {
   background-color: #4b505a;
 }
 
-.site-top-btn {
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
-}
-
 .site-top-btn--active {
+  display: block;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }

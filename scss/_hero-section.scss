@@ -10,10 +10,25 @@
       margin-bottom: 0.7rem;
     }
     &__text {
-      
       font-family: $mont;
       font-size: 1.2rem;
       text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+    padding: $section-left-right-padding--tablet;
+
+    .hero-content {
+      &__title {
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+      }
+      &__text {
+        font-size: 1.7rem;
+      }
     }
   }
 }

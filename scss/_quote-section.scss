@@ -1,38 +1,90 @@
 .quote-container {
   margin-bottom: $section-margin-bottom;
   padding: $section-left-right-padding;
-  &__title {
-    @include title-style;
-    color: $sec-color;
-    font-size: $h3-title-size;
-  }
-  &__content {
-    margin-bottom: $title-bottom-margin;
-  }
-  &__img-container {
-    border-radius: 50%;
-    height: 100px;
-    margin: 0 auto $quote-img-margin-bottom auto;
-    width: 100px;
-  }
-  &__img {
-    border-radius: 50%;
-    height: 100px;
-    object-fit: cover;
-    width: 100px;
-  }
+  .quote-content-container {
+    &__title {
+      @include title-style;
+      color: $sec-color;
+      font-size: $h3-title-size;
+    }
+    &__content {
+      margin-bottom: $title-bottom-margin;
+    }
+    &__img-container {
+      border-radius: 50%;
+      height: 100px;
+      margin: 0 auto $quote-img-margin-bottom auto;
+      width: 100px;
+    }
+    &__img {
+      border-radius: 50%;
+      height: 100px;
+      object-fit: cover;
+      width: 100px;
+    }
 
-  &__text-container {
-    font-size: 1.2rem;
-    text-align: center;
+    &__text-container {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    &__text {
+      line-height: 1.7rem;
+      margin-bottom: $quote-credit-margin-bottom;
+    }
+    &__credit {
+      color: #a6a9ad;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
   }
-  &__text {
-    line-height: 1.7rem;
-    margin-bottom: $quote-credit-margin-bottom;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote-container {
+    padding: $section-left-right-padding--tablet;
+    &__title {
+      @include title-style;
+      margin-bottom: 5rem !important;
+      font-size: calc(#{$h3-title-size} + 0.2rem) !important;
+    }
+    .quote-content-container {
+      display: flex;
+      justify-content: space-around;
+
+      &__content {
+        margin-bottom: 0 !important;
+        width: 200px;
+      
+      }
+      &__img-container {
+        border-radius: 50%;
+        height: 100px;
+        margin: 0 auto $quote-img-margin-bottom auto;
+        width: 100px;
+      }
+      &__img {
+        border-radius: 50%;
+        height: 100px;
+        object-fit: cover;
+        width: 100px;
+      }
+
+      &__text-container {
+        font-size: 1rem;
+        text-align: center;
+      }
+      &__text {
+        line-height: 1.7rem;
+        margin-bottom: $quote-credit-margin-bottom;
+      }
+      &__credit {
+        color: #a6a9ad;
+        font-size: 1.1rem;
+        font-style: italic;
+      }
+    }
   }
-  &__credit {
-    color: #a6a9ad;
-    font-size: 1.1rem;
-    font-style: italic;
+  .quote-content-container__content--margin-top {
+  
   }
 }

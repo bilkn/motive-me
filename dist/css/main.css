@@ -251,7 +251,7 @@ button {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .site-head {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2.5rem;
   }
 }
 
@@ -355,6 +355,19 @@ button {
   text-align: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  .hero-container .hero-content__title {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+  }
+  .hero-container .hero-content__text {
+    font-size: 1.7rem;
+  }
+}
+
 .action-container {
   padding: 0 1.5rem 0 1.5rem;
   margin-bottom: 10rem;
@@ -390,9 +403,13 @@ button {
 }
 
 .action-container__list .action-container-item {
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 15px black;
+          box-shadow: 10px 10px 15px black;
   margin-bottom: 2rem;
-  width: 70%;
+  max-width: 270px;
   height: 300px;
+  width: 70%;
 }
 
 .action-container__list .action-container-item__link {
@@ -429,6 +446,43 @@ button {
   margin: 0 !important;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .action-container {
+    padding: 0 2.5rem 0 2.5rem !important;
+  }
+  .action-container__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .action-title-container {
+    margin-bottom: 2rem;
+  }
+  .action-title-container__title {
+    color: #ffd369;
+    font-size: 1.7rem !important;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+  .action-title-container__text {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+  .action-container-item {
+    width: 30% !important;
+    max-width: 260px !important;
+    margin-bottom: 0 !important;
+  }
+  .action-container-item__link {
+    font-weight: 500;
+    font-size: 1.5rem !important;
+  }
+}
+
 .social-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -452,7 +506,7 @@ button {
   padding: 0 1.5rem 0 1.5rem;
 }
 
-.quote-container__title {
+.quote-container .quote-content-container__title {
   border-bottom: 2px solid #ffd2698f;
   color: #ffd369;
   font-size: 1.4rem;
@@ -468,18 +522,18 @@ button {
   font-size: 1.4rem;
 }
 
-.quote-container__content {
+.quote-container .quote-content-container__content {
   margin-bottom: 2rem;
 }
 
-.quote-container__img-container {
+.quote-container .quote-content-container__img-container {
   border-radius: 50%;
   height: 100px;
   margin: 0 auto 1rem auto;
   width: 100px;
 }
 
-.quote-container__img {
+.quote-container .quote-content-container__img {
   border-radius: 50%;
   height: 100px;
   -o-object-fit: cover;
@@ -487,20 +541,78 @@ button {
   width: 100px;
 }
 
-.quote-container__text-container {
+.quote-container .quote-content-container__text-container {
   font-size: 1.2rem;
   text-align: center;
 }
 
-.quote-container__text {
+.quote-container .quote-content-container__text {
   line-height: 1.7rem;
   margin-bottom: 0.7rem;
 }
 
-.quote-container__credit {
+.quote-container .quote-content-container__credit {
   color: #a6a9ad;
   font-size: 1.1rem;
   font-style: italic;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote-container {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  .quote-container__title {
+    border-bottom: 2px solid #ffd2698f;
+    color: #ffd369;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 5rem !important;
+    font-size: calc(1.4rem + 0.2rem) !important;
+  }
+  .quote-container .quote-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .quote-container .quote-content-container__content {
+    margin-bottom: 0 !important;
+    width: 200px;
+  }
+  .quote-container .quote-content-container__img-container {
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto 1rem auto;
+    width: 100px;
+  }
+  .quote-container .quote-content-container__img {
+    border-radius: 50%;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100px;
+  }
+  .quote-container .quote-content-container__text-container {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .quote-container .quote-content-container__text {
+    line-height: 1.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .quote-container .quote-content-container__credit {
+    color: #a6a9ad;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
 }
 
 .about-container {

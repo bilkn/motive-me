@@ -19,9 +19,13 @@
     @include flex;
     flex-direction: column;
     .action-container-item {
+     
+      border-radius: 10px; 
+      box-shadow: 10px 10px 15px black;
       margin-bottom: 2rem;
-      width: 70%;
+      max-width: 270px;
       height: 300px;
+      width: 70%;
       &__link {
         @include background-cover;
         align-items: flex-end;
@@ -45,6 +49,41 @@
     }
     .action-container-item--margin-zero {
       margin: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .action-container {
+    padding: $section-left-right-padding--tablet !important;
+    &__list {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  .action-title-container {
+    &__title {
+      color: $sec-color; //can be changed
+      font-size: 1.7rem !important;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    &__text {
+      font-size: 1.5rem !important;
+      text-align: center;
+    }
+    margin-bottom: $title-bottom-margin;
+  }
+
+  .action-container-item {
+    width: 30% !important;
+    max-width: 260px !important;
+    margin-bottom: 0 !important;
+
+    &__link {
+      font-weight: 500;
+      font-size: 1.5rem !important;
     }
   }
 }

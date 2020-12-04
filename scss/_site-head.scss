@@ -12,9 +12,13 @@
   @include flex;
 
   .site-head-nav {
+    flex: auto;
     display: none;
+    margin-right: 70px;
     &__list {
+      font-size: 1.3rem;
       @include flex;
+      justify-content: center;
     }
   }
 
@@ -25,16 +29,15 @@
   &__logo {
     user-select: none;
     @include flex;
-    flex: auto;
+
     font-family: $mont;
-    margin-right: 0 !important;
     .logo-half {
       color: $sec-color !important;
     }
   }
 
   .header-item {
-    margin-right: 16px;
+    margin-right: 20px;
   }
 
   .site-head-menu-nav {
@@ -46,14 +49,35 @@
   }
 }
 
+.site-head-nav-item {
+  &__link {
+    @include menu-link-transition;
+    color: $third-color !important;
+  }
+  &__link:hover {
+    color: darken($third-color, 20%) !important;
+  }
+}
+
 .site-head-menu-nav-item__link {
+  @include menu-link-transition;
+  color: #bdbcbc;
   font-size: 1.8rem;
-  color: $main-color;
+}
+
+.site-head-menu-nav-item__link:hover {
+  color: #bdbcbcc2;
 }
 
 @media (min-width: 768px) {
   .site-head-nav,
-  .site-head-menu-nav{
+  .site-head-menu-nav {
     display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .site-head {
+    padding: 0.5rem 1.5rem;
   }
 }

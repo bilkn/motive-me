@@ -28,8 +28,10 @@
       justify-content: center;
       margin-bottom: 1rem;
       &__link {
+        @include menu-link-transition;
         color: $sec-color;
         font-size: 2rem;
+
       }
       &__link:hover {
         color: $sec-color-dark;
@@ -44,6 +46,8 @@
 }
 
 
+
+
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -56,8 +60,4 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  
-  
-}
+

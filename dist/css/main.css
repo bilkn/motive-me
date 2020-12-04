@@ -77,6 +77,12 @@ button {
           transition-timing-function: ease-in-out;
 }
 
+.menu-bar:hover .menu-bar__item,
+.menu-bar:hover::before,
+.menu-bar:hover::after {
+  border-color: rgba(202, 202, 202, 0.856);
+}
+
 .menu-bar::before {
   background: black;
   border: 1px solid #eeeeee;
@@ -156,16 +162,24 @@ button {
 }
 
 .site-head-nav-container .site-head-nav {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
   display: none;
+  margin-right: 70px;
 }
 
 .site-head-nav-container .site-head-nav__list {
+  font-size: 1.3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .site-head-nav-container__link {
@@ -183,11 +197,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
   font-family: "Montserrat", sans-serif;
-  margin-right: 0 !important;
 }
 
 .site-head-nav-container__logo .logo-half {
@@ -195,7 +205,7 @@ button {
 }
 
 .site-head-nav-container .header-item {
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 .site-head-nav-container .site-head-menu-nav {
@@ -211,15 +221,37 @@ button {
           justify-content: space-between;
 }
 
+.site-head-nav-item__link {
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
+  color: #eeeeee !important;
+}
+
+.site-head-nav-item__link:hover {
+  color: #bbbbbb !important;
+}
+
 .site-head-menu-nav-item__link {
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
+  color: #bdbcbc;
   font-size: 1.8rem;
-  color: #222831;
+}
+
+.site-head-menu-nav-item__link:hover {
+  color: #bdbcbcc2;
 }
 
 @media (min-width: 768px) {
   .site-head-nav,
   .site-head-menu-nav {
     display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .site-head {
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -278,6 +310,8 @@ button {
 }
 
 .mobile-menu-nav__list .mobile-menu-nav-item__link {
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
   color: #ffd369;
   font-size: 2rem;
 }
@@ -588,6 +622,10 @@ button {
   background-color: #4b505ae0;
 }
 
+.site-top-btn:focus {
+  outline: none;
+}
+
 .site-top-btn:active {
   background-color: #4b505a;
 }
@@ -602,7 +640,7 @@ button {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .no-margin {

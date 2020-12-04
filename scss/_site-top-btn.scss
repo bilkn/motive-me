@@ -19,6 +19,10 @@
 .site-top-btn:hover {
   background-color: #4b505ae0;
 }
+
+.site-top-btn:focus {
+  outline: none;
+}
 .site-top-btn:active {
   background-color: #4b505a;
 }

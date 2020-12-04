@@ -22,6 +22,12 @@
   }
 }
 
+.menu-bar:hover .menu-bar__item,  
+.menu-bar:hover::before,  
+.menu-bar:hover::after {
+  border-color: rgba(202, 202, 202, 0.856);
+}  
+
 .menu-bar::before {
   @include hamburger-bar;
   @include bar-transition;

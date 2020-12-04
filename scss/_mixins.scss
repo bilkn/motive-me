@@ -17,6 +17,10 @@
   transition-timing-function: ease-in-out;
 }
 
+@mixin menu-link-transition {
+  transition: color 100ms ease-in;
+}
+
 @mixin background-cover {
   background-repeat: no-repeat !important;
   background-position: center !important;

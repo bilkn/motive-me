@@ -1,14 +1,12 @@
 .quote-container {
   margin-bottom: $section-margin-bottom;
   padding: $section-left-right-padding;
+  &__title {
+    @include title-style;
+  }
   .quote-content-container {
-    &__title {
-      @include title-style;
-      color: $sec-color;
-      font-size: $h3-title-size;
-    }
     &__content {
-      margin-bottom: $title-bottom-margin;
+      margin-bottom: $title-bottom-margin + 2rem;
     }
     &__img-container {
       border-radius: 50%;
@@ -39,6 +37,20 @@
   }
 }
 
+@media (min-width: 768px) {
+  .quote-container {
+    &__title {
+      @include title-style;
+    }
+    .quote-content-container {
+      display: flex;
+      &__content {
+        flex: 1;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .quote-container {
     padding: $section-left-right-padding--tablet;
@@ -54,7 +66,6 @@
       &__content {
         margin-bottom: 0 !important;
         width: 200px;
-      
       }
       &__img-container {
         border-radius: 50%;
@@ -63,28 +74,22 @@
         width: 100px;
       }
       &__img {
-        border-radius: 50%;
         height: 100px;
-        object-fit: cover;
         width: 100px;
       }
 
       &__text-container {
         font-size: 1rem;
-        text-align: center;
       }
       &__text {
         line-height: 1.7rem;
         margin-bottom: $quote-credit-margin-bottom;
       }
       &__credit {
-        color: #a6a9ad;
         font-size: 1.1rem;
-        font-style: italic;
       }
     }
   }
   .quote-content-container__content--margin-top {
-  
   }
 }

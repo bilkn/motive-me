@@ -150,6 +150,7 @@ button {
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100vw;
+  z-index: 1000;
 }
 
 .site-head-nav-container {
@@ -425,6 +426,10 @@ button {
   margin-bottom: 2rem;
   max-width: 270px;
   height: 300px;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
   width: 70%;
 }
 
@@ -460,6 +465,11 @@ button {
 
 .action-container__list .action-container-item--margin-zero {
   margin: 0 !important;
+}
+
+.action-container__list .action-container-item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

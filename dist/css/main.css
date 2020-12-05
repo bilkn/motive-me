@@ -472,6 +472,18 @@ button {
           transform: translateY(-10px);
 }
 
+@media (min-width: 768px) {
+  .action-container__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .action-container {
     padding: 0 2.5rem 0 2.5rem !important;
@@ -523,8 +535,18 @@ button {
 }
 
 .social-links__link {
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
   color: #dddbdb;
   margin-right: 1.5rem;
+}
+
+.social-links__link:active {
+  outline: none;
+}
+
+.social-links__link:hover {
+  color: #aba7a7;
 }
 
 .quote-container {
@@ -579,6 +601,7 @@ button {
   color: #a6a9ad;
   font-size: 1.1rem;
   font-style: italic;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -601,9 +624,22 @@ button {
     display: flex;
   }
   .quote-container .quote-content-container__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .quote-container .quote-content-container__credit {
+    text-align: center;
   }
 }
 
@@ -626,16 +662,9 @@ button {
     margin-bottom: 5rem !important;
     font-size: calc(1.4rem + 0.2rem) !important;
   }
-  .quote-container .quote-content-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .quote-container .quote-content-container__content {
+    margin-right: 1.2rem;
     margin-bottom: 0 !important;
-    width: 200px;
   }
   .quote-container .quote-content-container__img-container {
     border-radius: 50%;
@@ -643,19 +672,19 @@ button {
     margin: 0 auto 1rem auto;
     width: 100px;
   }
-  .quote-container .quote-content-container__img {
-    height: 100px;
-    width: 100px;
-  }
   .quote-container .quote-content-container__text-container {
     font-size: 1rem;
   }
   .quote-container .quote-content-container__text {
+    font-size: 1rem !important;
     line-height: 1.7rem;
     margin-bottom: 0.7rem;
   }
   .quote-container .quote-content-container__credit {
     font-size: 1.1rem;
+  }
+  .quote-content-container__content--no-margin {
+    margin-right: 0 !important;
   }
 }
 
@@ -783,7 +812,7 @@ button {
 }
 
 .site-top-btn:active {
-  background-color: #4b505a;
+  background-color: #474b55e0;
 }
 
 .site-top-btn--active {

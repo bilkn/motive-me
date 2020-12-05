@@ -5,7 +5,14 @@
   font-size: 2.2rem;
   justify-content: center;
   &__link {
+    @include menu-link-transition;
     color: #dddbdb;
     margin-right: 1.5rem;
+  }
+  &__link:active {
+    outline: none;
+  }
+  &__link:hover {
+    color: darken(#dddbdb, 20%);
   }
 }

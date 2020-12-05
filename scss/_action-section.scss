@@ -19,7 +19,7 @@
     @include flex;
     flex-direction: column;
     .action-container-item {
-      border-radius: 10px; 
+      border-radius: 10px;
       box-shadow: 10px 10px 15px black;
       margin-bottom: 2rem;
       max-width: 270px;
@@ -50,8 +50,17 @@
     .action-container-item--margin-zero {
       margin: 0 !important;
     }
-    .action-container-item:hover  {
-        transform: translateY(-10px);
+    .action-container-item:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .action-container {
+    &__list {
+      justify-content: space-between;
+      flex-direction: row;
     }
   }
 }

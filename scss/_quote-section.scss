@@ -33,6 +33,7 @@
       color: #a6a9ad;
       font-size: 1.1rem;
       font-style: italic;
+      text-align: center;
     }
   }
 }
@@ -45,7 +46,13 @@
     .quote-content-container {
       display: flex;
       &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         flex: 1;
+      }
+      &__credit {
+        text-align: center;
       }
     }
   }
@@ -60,12 +67,9 @@
       font-size: calc(#{$h3-title-size} + 0.2rem) !important;
     }
     .quote-content-container {
-      display: flex;
-      justify-content: space-around;
-
       &__content {
+        margin-right: 1.2rem;
         margin-bottom: 0 !important;
-        width: 200px;
       }
       &__img-container {
         border-radius: 50%;
@@ -73,15 +77,11 @@
         margin: 0 auto $quote-img-margin-bottom auto;
         width: 100px;
       }
-      &__img {
-        height: 100px;
-        width: 100px;
-      }
-
       &__text-container {
         font-size: 1rem;
       }
       &__text {
+        font-size: 1rem !important;
         line-height: 1.7rem;
         margin-bottom: $quote-credit-margin-bottom;
       }
@@ -90,5 +90,7 @@
       }
     }
   }
-  
+  .quote-content-container__content--no-margin {
+    margin-right: 0 !important;
+  }
 }

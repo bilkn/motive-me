@@ -13,5 +13,16 @@
       color: #afafaf !important;
     }
   }
+ 
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-container {
+    padding: $section-left-right-padding--tablet;
+    .home-footer {
+      &__freepik-link {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

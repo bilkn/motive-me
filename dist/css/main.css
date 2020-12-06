@@ -358,6 +358,10 @@ button {
   margin-bottom: 2rem;
 }
 
+.hero-container .hero-content {
+  margin-bottom: 5rem;
+}
+
 .hero-container .hero-content__title {
   color: #ffd369;
   font-family: 'Roboto', sans-serif;
@@ -372,16 +376,19 @@ button {
   text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-container {
-    padding: 0 2.5rem 0 2.5rem;
-  }
+@media screen and (min-width: 768px) {
   .hero-container .hero-content__title {
-    font-size: 2.75rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
   .hero-container .hero-content__text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+    padding: 0 2.5rem 0 2.5rem;
   }
 }
 
@@ -550,7 +557,7 @@ button {
 }
 
 .quote-container {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   padding: 0 1.5rem 0 1.5rem;
 }
 
@@ -659,8 +666,8 @@ button {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    margin-bottom: 5rem !important;
-    font-size: calc(1.4rem + 0.2rem) !important;
+    margin-bottom: 2rem !important;
+    font-size: 1.6rem !important;
   }
   .quote-container .quote-content-container__content {
     margin-right: 1.2rem;
@@ -677,11 +684,7 @@ button {
   }
   .quote-container .quote-content-container__text {
     font-size: 1rem !important;
-    line-height: 1.7rem;
     margin-bottom: 0.7rem;
-  }
-  .quote-container .quote-content-container__credit {
-    font-size: 1.1rem;
   }
   .quote-content-container__content--no-margin {
     margin-right: 0 !important;
@@ -689,7 +692,7 @@ button {
 }
 
 .about-container {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   text-align: center;
   padding: 0 1.5rem 0 1.5rem;
   padding-top: 5rem;
@@ -713,6 +716,32 @@ button {
   font-size: 1.1rem;
   line-height: 1.5rem;
   letter-spacing: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .about-container {
+    padding: 0 2.5rem 0 2.5rem;
+    padding-top: 5rem;
+  }
+  .about-container__title {
+    border-bottom: 2px solid #ffd2698f;
+    color: #ffd369;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 1.6rem;
+  }
+  .about-container .about-content {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+  }
 }
 
 .stories-container {
@@ -740,7 +769,7 @@ button {
 }
 
 .stories-container .story__name {
-  color: #fafafa;
+  color: #eeeeee;
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -750,6 +779,22 @@ button {
   font-size: 1.1rem;
   line-height: 1.5rem;
   word-spacing: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stories-container {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  .stories-container .story__title {
+    font-size: 1.6rem;
+  }
+  .stories-container .story__name {
+    font-size: 1.3rem;
+  }
+  .stories-container .story__text {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
 }
 
 .footer-container {
@@ -778,6 +823,15 @@ button {
 
 .footer-container .home-footer__freepik-link:hover {
   color: #afafaf !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-container {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  .footer-container .home-footer__freepik-link {
+    font-size: 0.7rem;
+  }
 }
 
 .site-top-btn {

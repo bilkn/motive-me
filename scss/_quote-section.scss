@@ -1,5 +1,5 @@
 .quote-container {
-  margin-bottom: $section-margin-bottom;
+  margin-bottom: $section-margin-bottom--small;
   padding: $section-left-right-padding;
   &__title {
     @include title-style;
@@ -63,8 +63,8 @@
     padding: $section-left-right-padding--tablet;
     &__title {
       @include title-style;
-      margin-bottom: 5rem !important;
-      font-size: calc(#{$h3-title-size} + 0.2rem) !important;
+      margin-bottom: 2rem !important;
+      font-size: $h3-title-size--tablet !important;
     }
     .quote-content-container {
       &__content {
@@ -82,11 +82,7 @@
       }
       &__text {
         font-size: 1rem !important;
-        line-height: 1.7rem;
         margin-bottom: $quote-credit-margin-bottom;
-      }
-      &__credit {
-        font-size: 1.1rem;
       }
     }
   }

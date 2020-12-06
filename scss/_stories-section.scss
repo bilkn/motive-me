@@ -8,7 +8,7 @@
       @include title-style;
     }
     &__name {
-      color: #fafafa;
+      color: #eeeeee;
       font-size: 1.2rem;
       text-align: center;
       margin-bottom: 1rem;
@@ -17,6 +17,25 @@
       font-size: $content-font-size;
       line-height: 1.5rem;
       word-spacing: 3px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stories-container {
+    padding: $section-left-right-padding--tablet;
+
+    .story {
+      &__title {
+        font-size: $h3-title-size--tablet;
+      }
+      &__name {
+        font-size: 1.3rem;
+      }
+      &__text {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+      }
     }
   }
 }

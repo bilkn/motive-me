@@ -1,11 +1,10 @@
 .about-container {
-  margin-bottom: $section-margin-bottom;
+  margin-bottom: $section-margin-bottom--small;
   text-align: center;
   padding: $section-left-right-padding;
   padding-top: $section-top-padding;
   &__title {
     @include title-style;
-    
   }
 
   .about-content {
@@ -14,3 +13,23 @@
     letter-spacing: 2px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .about-container {
+    padding: $section-left-right-padding--tablet;
+    padding-top: $section-top-padding;
+    &__title {
+      @include title-style;
+      font-size: $h3-title-size--tablet;
+    }
+  
+    .about-content {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+     

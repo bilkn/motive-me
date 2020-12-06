@@ -2,6 +2,8 @@
   padding: $section-left-right-padding;
   margin-bottom: $title-bottom-margin;
   .hero-content {
+    margin-bottom: 5rem;
+
     &__title {
       color: $sec-color;
       font-family: 'Roboto', sans-serif;
@@ -17,18 +19,22 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hero-container {
-    padding: $section-left-right-padding--tablet;
-
     .hero-content {
       &__title {
-        font-size: 2.75rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
       }
       &__text {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+    padding: $section-left-right-padding--tablet;
   }
 }

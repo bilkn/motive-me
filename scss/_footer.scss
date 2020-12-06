@@ -26,3 +26,9 @@
     }
   }
 }
+
+@media (min-width: 1281px) {
+  .footer-container {
+    padding: $section-left-right-padding--desktop;
+  }
+}

@@ -30,3 +30,10 @@
 .site-top-btn--active {
   transform: translateY(0px);
 }
+
+@media (min-width: 1281px) {
+  .site-top-btn {
+    right: 20px;
+    bottom: 20px;
+  }
+}

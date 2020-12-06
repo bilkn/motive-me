@@ -31,5 +31,12 @@
   }
 }
 
+@media (min-width: 1281px) {
+  .about-container {
+    padding: $section-left-right-padding--desktop;
+    padding-top: $section-top-padding;
+  }
+}
+
 
      

@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero-container {
     .hero-content {
       &__title {
@@ -36,5 +36,12 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero-container {
     padding: $section-left-right-padding--tablet;
+  }
+}
+
+
+@media (min-width: 1281px) {
+  .hero-container {
+    padding: $section-left-right-padding--desktop;
   }
 }

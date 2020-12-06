@@ -42,6 +42,7 @@
   .quote-container {
     &__title {
       @include title-style;
+      margin-bottom: 2rem !important;
     }
     .quote-content-container {
       display: flex;
@@ -63,7 +64,7 @@
     padding: $section-left-right-padding--tablet;
     &__title {
       @include title-style;
-      margin-bottom: 2rem !important;
+      
       font-size: $h3-title-size--tablet !important;
     }
     .quote-content-container {
@@ -88,5 +89,11 @@
   }
   .quote-content-container__content--no-margin {
     margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  .quote-container {
+    padding: $section-left-right-padding--desktop;
   }
 }

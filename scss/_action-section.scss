@@ -1,6 +1,8 @@
 .action-container {
   padding: $section-left-right-padding;
-  margin-bottom: $section-margin-bottom;
+  max-width: 1500px;
+  margin: 0 auto $section-margin-bottom auto;
+
   .action-title-container {
     &__title {
       color: $sec-color; //can be changed
@@ -64,13 +66,12 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .action-container {
-    padding: $section-left-right-padding--tablet !important;
+    padding: $section-left-right-padding--tablet;
     &__list {
       justify-content: space-between;
     }
-
     .action-title-container {
       &__title {
         color: $sec-color; //can be changed
@@ -84,7 +85,11 @@
       }
       margin-bottom: $title-bottom-margin;
     }
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .action-container {
     .action-container-item {
       max-width: 260px;
       margin-bottom: 0;
@@ -98,10 +103,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .action-container {
     padding: $section-left-right-padding--desktop;
-
     &__list {
       justify-content: space-around;
       .action-container-item {

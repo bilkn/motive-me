@@ -1,5 +1,6 @@
 .about-container {
-  margin-bottom: $section-margin-bottom--small;
+  max-width: 1500px;
+  margin: 0 auto $section-margin-bottom--small auto;
   text-align: center;
   padding: $section-left-right-padding;
   padding-top: $section-top-padding;
@@ -14,15 +15,12 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) {
   .about-container {
-    padding: $section-left-right-padding--tablet;
-    padding-top: $section-top-padding;
     &__title {
-      @include title-style;
       font-size: $h3-title-size--tablet;
     }
-  
+
     .about-content {
       font-size: 1.2rem;
       line-height: 1.7rem;
@@ -31,12 +29,16 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    padding: $section-left-right-padding--tablet;
+    padding-top: $section-top-padding;
+  }
+}
+
+@media (min-width: 1025px) {
   .about-container {
     padding: $section-left-right-padding--desktop;
     padding-top: $section-top-padding;
   }
 }
-
-
-     

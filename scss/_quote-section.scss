@@ -1,6 +1,8 @@
 .quote-container {
   margin-bottom: $section-margin-bottom--small;
   padding: $section-left-right-padding;
+  max-width: 1500px;
+  margin: 0 auto $section-margin-bottom--small auto;
   &__title {
     @include title-style;
   }
@@ -41,20 +43,28 @@
 @media (min-width: 768px) {
   .quote-container {
     &__title {
-      @include title-style;
-      margin-bottom: 2rem !important;
+      margin-bottom: 2rem;
+      font-size: $h3-title-size--tablet;
     }
     .quote-content-container {
       display: flex;
       &__content {
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: space-between;
-        flex: 1;
+        margin-bottom: 0;
+        margin-right: 1.2rem;
+      }
+      &__text {
+        font-size: 1.2rem;
       }
       &__credit {
         text-align: center;
       }
+    }
+    .quote-content-container__content--no-margin {
+      margin-right: 0 !important;
     }
   }
 }
@@ -62,38 +72,17 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .quote-container {
     padding: $section-left-right-padding--tablet;
-    &__title {
-      @include title-style;
-      
-      font-size: $h3-title-size--tablet !important;
-    }
-    .quote-content-container {
-      &__content {
-        margin-right: 1.2rem;
-        margin-bottom: 0 !important;
-      }
-      &__img-container {
-        border-radius: 50%;
-        height: 100px;
-        margin: 0 auto $quote-img-margin-bottom auto;
-        width: 100px;
-      }
-      &__text-container {
-        font-size: 1rem;
-      }
-      &__text {
-        font-size: 1rem !important;
-        margin-bottom: $quote-credit-margin-bottom;
-      }
-    }
-  }
-  .quote-content-container__content--no-margin {
-    margin-right: 0 !important;
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   .quote-container {
     padding: $section-left-right-padding--desktop;
+    .quote-content-container {
+      &__content {
+        margin-right: 2rem;
+        margin-bottom: 0 !important;
+      }
+    }
   }
 }

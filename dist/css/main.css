@@ -153,6 +153,11 @@ button {
   z-index: 1000;
 }
 
+.site-head-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .site-head-nav-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -160,7 +165,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -268,7 +272,7 @@ button {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   .site-head {
     padding: 0.5rem 5rem;
   }
@@ -398,7 +402,7 @@ button {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   .hero-container {
     padding: 0 5rem 0 5rem;
   }
@@ -406,7 +410,8 @@ button {
 
 .action-container {
   padding: 0 1.5rem 0 1.5rem;
-  margin-bottom: 10rem;
+  max-width: 1500px;
+  margin: 0 auto 10rem auto;
 }
 
 .action-container .action-title-container {
@@ -500,9 +505,9 @@ button {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .action-container {
-    padding: 0 2.5rem 0 2.5rem !important;
+    padding: 0 2.5rem 0 2.5rem;
   }
   .action-container__list {
     -webkit-box-pack: justify;
@@ -522,6 +527,9 @@ button {
     font-size: 1.5rem;
     text-align: center;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .action-container .action-container-item {
     max-width: 260px;
     margin-bottom: 0;
@@ -534,7 +542,7 @@ button {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .action-container {
     padding: 0 5rem 0 5rem;
   }
@@ -582,6 +590,8 @@ button {
 .quote-container {
   margin-bottom: 5rem;
   padding: 0 1.5rem 0 1.5rem;
+  max-width: 1500px;
+  margin: 0 auto 5rem auto;
 }
 
 .quote-container__title {
@@ -636,18 +646,8 @@ button {
 
 @media (min-width: 768px) {
   .quote-container__title {
-    border-bottom: 2px solid #ffd2698f;
-    color: #ffd369;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    padding-bottom: .5rem;
-    text-align: center;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-bottom: 2rem !important;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
   }
   .quote-container .quote-content-container {
     display: -webkit-box;
@@ -658,6 +658,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -665,12 +668,17 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    margin-bottom: 0;
+    margin-right: 1.2rem;
+  }
+  .quote-container .quote-content-container__text {
+    font-size: 1.2rem;
   }
   .quote-container .quote-content-container__credit {
     text-align: center;
+  }
+  .quote-container .quote-content-container__content--no-margin {
+    margin-right: 0 !important;
   }
 }
 
@@ -678,50 +686,21 @@ button {
   .quote-container {
     padding: 0 2.5rem 0 2.5rem;
   }
-  .quote-container__title {
-    border-bottom: 2px solid #ffd2698f;
-    color: #ffd369;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    padding-bottom: .5rem;
-    text-align: center;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    font-size: 1.6rem !important;
-  }
-  .quote-container .quote-content-container__content {
-    margin-right: 1.2rem;
-    margin-bottom: 0 !important;
-  }
-  .quote-container .quote-content-container__img-container {
-    border-radius: 50%;
-    height: 100px;
-    margin: 0 auto 1rem auto;
-    width: 100px;
-  }
-  .quote-container .quote-content-container__text-container {
-    font-size: 1rem;
-  }
-  .quote-container .quote-content-container__text {
-    font-size: 1rem !important;
-    margin-bottom: 0.7rem;
-  }
-  .quote-content-container__content--no-margin {
-    margin-right: 0 !important;
-  }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   .quote-container {
     padding: 0 5rem 0 5rem;
+  }
+  .quote-container .quote-content-container__content {
+    margin-right: 2rem;
+    margin-bottom: 0 !important;
   }
 }
 
 .about-container {
-  margin-bottom: 5rem;
+  max-width: 1500px;
+  margin: 0 auto 5rem auto;
   text-align: center;
   padding: 0 1.5rem 0 1.5rem;
   padding-top: 5rem;
@@ -747,23 +726,8 @@ button {
   letter-spacing: 2px;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
-  .about-container {
-    padding: 0 2.5rem 0 2.5rem;
-    padding-top: 5rem;
-  }
+@media (min-width: 768px) {
   .about-container__title {
-    border-bottom: 2px solid #ffd2698f;
-    color: #ffd369;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    padding-bottom: .5rem;
-    text-align: center;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     font-size: 1.6rem;
   }
   .about-container .about-content {
@@ -773,7 +737,14 @@ button {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    padding: 0 2.5rem 0 2.5rem;
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 1025px) {
   .about-container {
     padding: 0 5rem 0 5rem;
     padding-top: 5rem;
@@ -781,7 +752,8 @@ button {
 }
 
 .stories-container {
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem auto;
+  max-width: 1500px;
   padding: 0 1.5rem 0 1.5rem;
   padding-top: 5rem;
 }
@@ -817,9 +789,8 @@ button {
   word-spacing: 3px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .stories-container {
-    padding: 0 2.5rem 0 2.5rem;
     padding-top: 5rem;
   }
   .stories-container .story__title {
@@ -834,10 +805,15 @@ button {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .stories-container {
-    padding: 0 5rem 0 5rem;
-    padding-top: 5rem;
+    padding: 0 2.5rem 0 2.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .stories-container {
+    padding: 0 5rem 0 5rem !important;
   }
 }
 
@@ -878,7 +854,7 @@ button {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1025px) {
   .footer-container {
     padding: 0 5rem 0 5rem;
   }
@@ -924,7 +900,7 @@ button {
           transform: translateY(0px);
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1024px) {
   .site-top-btn {
     right: 20px;
     bottom: 20px;

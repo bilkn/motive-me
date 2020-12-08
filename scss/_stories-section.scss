@@ -1,5 +1,6 @@
 .stories-container {
-  margin-bottom: $section-margin-bottom;
+  margin: 0 auto $section-margin-bottom auto;
+  max-width: 1500px;
   padding: $section-left-right-padding;
   padding-top: $section-top-padding;
   .story {
@@ -21,9 +22,8 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .stories-container {
-    padding: $section-left-right-padding--tablet;
     padding-top: $section-top-padding;
     .story {
       &__title {
@@ -40,9 +40,14 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .stories-container {
-    padding: $section-left-right-padding--desktop;
-    padding-top: $section-top-padding;
+    padding: $section-left-right-padding--tablet;
+  }
+}
+
+@media (min-width: 1025px) {
+  .stories-container {
+    padding: $section-left-right-padding--desktop !important;
   }
 }

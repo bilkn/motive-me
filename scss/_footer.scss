@@ -1,4 +1,6 @@
 .footer-container {
+  max-width: $section-max-width;
+  margin: 0 auto;
   padding: $section-left-right-padding;
   .home-footer {
     @include flex;

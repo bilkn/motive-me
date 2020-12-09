@@ -1,5 +1,5 @@
 .about-container {
-  max-width: 1500px;
+  max-width: $section-max-width;
   margin: 0 auto $section-margin-bottom--small auto;
   text-align: center;
   padding: $section-left-right-padding;
@@ -10,21 +10,14 @@
 
   .about-content {
     font-size: $content-font-size;
-    line-height: 1.5rem;
-    letter-spacing: 2px;
+    line-height: 1.7rem;
   }
 }
 
 @media (min-width: 768px) {
   .about-container {
     &__title {
-      font-size: $h3-title-size--tablet;
-    }
-
-    .about-content {
-      font-size: 1.2rem;
-      line-height: 1.7rem;
-      letter-spacing: 1px;
+      font-size: $h3-title-size;
     }
   }
 }

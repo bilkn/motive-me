@@ -1,6 +1,6 @@
 .stories-container {
   margin: 0 auto $section-margin-bottom auto;
-  max-width: 1500px;
+  max-width: $section-max-width;
   padding: $section-left-right-padding;
   padding-top: $section-top-padding;
   .story {
@@ -27,7 +27,7 @@
     padding-top: $section-top-padding;
     .story {
       &__title {
-        font-size: $h3-title-size--tablet;
+        font-size: $h3-title-size;
       }
       &__name {
         font-size: 1.3rem;

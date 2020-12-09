@@ -22,8 +22,8 @@
 }
 
 @mixin background-cover {
-  background-repeat: no-repeat !important;
   background-position: center !important;
+  background-repeat: no-repeat !important;
   background-size: cover !important;
 }
 

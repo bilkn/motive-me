@@ -1,14 +1,14 @@
 .action-container {
-  padding: $section-left-right-padding;
-  max-width: $section-max-width;
   margin: 0 auto $section-margin-bottom auto;
+  max-width: $section-max-width;
+  padding: $section-left-right-padding;
 
   .action-title-container {
     &__title {
       color: $sec-color; //can be changed
       font-size: 1.4rem;
-      text-align: center;
       margin-bottom: 0.4rem;
+      text-align: center;
     }
     &__text {
       font-size: 1.3rem;
@@ -23,9 +23,9 @@
     .action-container-item {
       border-radius: 10px;
       box-shadow: 10px 10px 15px black;
+      height: 300px;
       margin-bottom: 2rem;
       max-width: 270px;
-      height: 300px;
       transition: transform 200ms ease-in;
       width: 70%;
       &__link {
@@ -35,8 +35,8 @@
         color: whitesmoke;
         display: flex;
         font-size: 1.4rem;
-        padding: 1rem;
         height: 100%;
+        padding: 1rem;
         width: 100%;
       }
       &__link--bg-entrepreneur {
@@ -91,8 +91,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .action-container {
     .action-container-item {
-      max-width: 260px;
       margin-bottom: 0;
+      max-width: 260px;
       height: 330px;
       width: 30%;
       &__link {
@@ -109,8 +109,8 @@
     &__list {
       justify-content: space-around;
       .action-container-item {
-        max-width: 250px;
         height: 350px;
+        max-width: 250px;
         &__link {
           font-size: 1.6rem;
         }

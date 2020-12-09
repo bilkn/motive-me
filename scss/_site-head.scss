@@ -10,8 +10,8 @@
 }
 
 .site-head-container {
-  max-width: $section-max-width;
   margin: 0 auto;
+  max-width: 1340px;
 }
 
 .site-head-nav-container {
@@ -21,10 +21,10 @@
   .site-head-nav {
     display: none;
     flex: 1;
-    width: max-content;
+    margin-right: 20px;
     &__list {
-      font-size: 1.3rem;
       @include flex;
+      font-size: 1.3rem;
       justify-content: center;
     }
   }
@@ -34,10 +34,10 @@
   }
 
   &__logo {
-    flex: 1;
-    user-select: none;
     @include flex;
+    flex: 1;
     font-family: $mont;
+    user-select: none;
     .logo-half {
       color: $sec-color !important;
     }

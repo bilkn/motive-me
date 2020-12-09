@@ -1,6 +1,6 @@
 .hero-container {
-  padding: $section-left-right-padding;
   margin-bottom: $title-bottom-margin;
+  padding: $section-left-right-padding;
   .hero-content {
     margin-bottom: 5rem;
 
@@ -8,8 +8,8 @@
       color: $sec-color;
       font-family: 'Roboto', sans-serif;
       font-size: 2rem;
-      text-align: center;
       margin-bottom: 0.7rem;
+      text-align: center;
     }
     &__text {
       font-family: $mont;

@@ -8,8 +8,8 @@
   height: 50px;
   position: fixed;
   right: 10px;
-  transition: transform 500ms ease-in-out;
   transform: translateY(100px);
+  transition: transform 500ms ease-in-out;
   width: 50px;
   &__icon {
     color: #eeeeee;
@@ -33,7 +33,7 @@
 
 @media (min-width: 1024px) {
   .site-top-btn {
-    right: 20px;
     bottom: 20px;
+    right: 20px;
   }
 }

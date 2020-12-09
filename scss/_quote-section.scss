@@ -1,8 +1,8 @@
 .quote-container {
-  margin-bottom: $section-margin-bottom--small;
-  padding: $section-left-right-padding;
-  max-width: $section-max-width;
   margin: 0 auto $section-margin-bottom--small auto;
+  margin-bottom: $section-margin-bottom--small;
+  max-width: $section-max-width;
+  padding: $section-left-right-padding;
   &__title {
     @include title-style;
   }
@@ -42,8 +42,8 @@
 @media (min-width: 768px) {
   .quote-container {
     &__title {
-      margin-bottom: 2rem;
       font-size: $h3-title-size;
+      margin-bottom: 2rem;
     }
     .quote-content-container {
       display: flex;
@@ -76,8 +76,8 @@
     padding: $section-left-right-padding--desktop;
     .quote-content-container {
       &__content {
-        margin-right: 2rem;
         margin-bottom: 0 !important;
+        margin-right: 2rem;
       }
     }
   }

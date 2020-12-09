@@ -8,8 +8,8 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 30px;
+  justify-content: center;
   position: fixed;
   right: 1rem;
   top: 13px;
@@ -17,8 +17,8 @@
   width: 25px;
   z-index: 1001;
   &__item {
-    @include hamburger-bar;
     @include bar-transition;
+    @include hamburger-bar;
   }
 }
 
@@ -29,24 +29,24 @@
 }  
 
 .menu-bar::before {
-  @include hamburger-bar;
   @include bar-transition;
+  @include hamburger-bar;
   content: '';
   position: absolute;
   transform: translateY(-8px);
 }
 
 .menu-bar::after {
-  @include hamburger-bar;
   @include bar-transition;
+  @include hamburger-bar;
   content: '';
   position: absolute;
   transform: translateY(8px);
 }
 
 .menu-bar--open .menu-bar__item {
-  transform: translateX(60px);
   opacity: 0;
+  transform: translateX(60px);
 }
 
 .menu-bar--open.menu-bar::before {

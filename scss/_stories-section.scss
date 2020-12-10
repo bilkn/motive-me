@@ -24,7 +24,7 @@
 
 @media (min-width: 768px) {
   .stories-container {
-    padding-top: $section-top-padding;
+    
     .story {
       &__title {
         font-size: $h3-title-size;
@@ -43,11 +43,13 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .stories-container {
     padding: $section-left-right-padding--tablet;
+    padding-top: $section-top-padding !important;
   }
 }
 
 @media (min-width: 1025px) {
   .stories-container {
     padding: $section-left-right-padding--desktop !important;
+    padding-top: $section-top-padding !important;
   }
 }

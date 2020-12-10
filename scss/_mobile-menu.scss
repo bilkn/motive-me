@@ -52,6 +52,12 @@
   ##Screen = B/w 768px to 1024px
 */
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .mobile-menu-nav {
+    padding: 4rem 2rem 0 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;

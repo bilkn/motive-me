@@ -23,17 +23,12 @@
 }
 
 @media (min-width: 768px) {
-  .stories-container {
-    
+  .stories-container { 
     .story {
-      &__title {
-        font-size: $h3-title-size;
-      }
       &__name {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
       &__text {
-        font-size: $content-font-size;
         line-height: 1.7rem;
       }
     }

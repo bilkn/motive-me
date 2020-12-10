@@ -34,6 +34,7 @@
     &__credit {
       color: #a6a9ad;
       font-style: italic;
+      font-size: 1rem;
       text-align: center;
     }
   }
@@ -42,7 +43,6 @@
 @media (min-width: 768px) {
   .quote-container {
     &__title {
-      font-size: $h3-title-size;
       margin-bottom: 2rem;
     }
     .quote-content-container {

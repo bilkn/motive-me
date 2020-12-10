@@ -355,6 +355,12 @@ button {
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .mobile-menu-nav {
+    padding: 4rem 2rem 0 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -638,12 +644,12 @@ button {
 .quote-container .quote-content-container__credit {
   color: #a6a9ad;
   font-style: italic;
+  font-size: 1rem;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .quote-container__title {
-    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
   .quote-container .quote-content-container {
@@ -778,14 +784,10 @@ button {
 }
 
 @media (min-width: 768px) {
-  .stories-container .story__title {
-    font-size: 1.4rem;
-  }
   .stories-container .story__name {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .stories-container .story__text {
-    font-size: 1.1rem;
     line-height: 1.7rem;
   }
 }

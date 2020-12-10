@@ -46,9 +46,9 @@ Have fun :)
 
 ## Built With
 
-- HTML - Hypertext Markup Language
-- CSS - Cascading Style Sheet
-- Javascript 
+* HTML - Hypertext Markup Language
+* CSS - Cascading Style Sheet
+* Javascript 
 * [SASS](https://sass-lang.com/) - CSS Pre-Processor
 
 ## Contributors

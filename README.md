@@ -1,4 +1,4 @@
-# MotiveMe - motivational site
+# MotiveMe - motivational landing page.
 
 A motivational site to read success stories, and get motivation.
 
